@@ -44,3 +44,21 @@ body{
 strong{
   color: var(--important);
 }
+
+#navbar{
+  background-color: var(--background1);
+  height: 2vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 50px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+#navbar>a{
+  text-decoration: none;
+  color: var(--important);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
