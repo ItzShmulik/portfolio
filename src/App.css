@@ -1,10 +1,46 @@
-body, html, .App{
-  margin: 0;
+:root{
+  box-sizing: border-box;
+  --background1: #0b202f;
+  --important: #70A9A1;
+}
+
+*{
+  font-family:'Courier New', Courier, monospace;
+}
+
+body{
   padding: 0;
+  margin: 0
 }
 
 #welcome-section{
-  background-color: #0B2027;
   width: 100vw;
   height: 100vh;
+  background-color: var(--background1);
+  padding-top: 10px;
+  padding-left: 5%;
+}
+
+#introduction{
+  width: fit-content;
+}
+
+#introduction>h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #c7c7c7;
+}
+
+#introduction>span{
+  font-size: 1.5rem;
+  color: #c7c7c7;
+}
+
+#introduction>p{
+  color: #c7c7c7;
+  font-size: 1.1rem;
+}
+
+strong{
+  color: var(--important);
 }
