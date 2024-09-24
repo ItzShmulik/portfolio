@@ -1,7 +1,9 @@
 :root{
   box-sizing: border-box;
-  --background1: #0b202f;
-  --important: #70A9A1;
+  --background1: #0B2027;
+  --background2: #40798C;
+  --navbar: #050f12;
+  --important: #7dc7bd;
 }
 
 *{
@@ -10,16 +12,26 @@
 
 body{
   padding: 0;
-  margin: 0
+  margin: 0;
+  overflow-x: hidden;
 }
 
 #welcome-section{
   width: 100vw;
   height: 100vh;
   background-color: var(--background1);
-  padding-top: 10px;
-  padding-left: 5%;
+  padding-top: 10%;
+  padding-left: 10%;
 }
+
+#projects-section{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background2);
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
 
 #introduction{
   width: fit-content;
@@ -39,6 +51,7 @@ body{
 #introduction>p{
   color: #c7c7c7;
   font-size: 1.1rem;
+  width: 30vw;
 }
 
 strong{
@@ -46,11 +59,14 @@ strong{
 }
 
 #navbar{
-  background-color: var(--background1);
-  height: 2vw;
+  position: fixed;
   display: flex;
+  background-color: var(--navbar);
+  height: 2vw;
+  top: 0;
+  left: 0;
+  right: 0;
   justify-content: end;
-  align-items: center;
   gap: 50px;
   padding-right: 30px;
   padding-top: 20px;
