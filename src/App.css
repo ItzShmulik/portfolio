@@ -10,6 +10,10 @@
   font-family:'Courier New', Courier, monospace;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   padding: 0;
   margin: 0;
@@ -62,11 +66,12 @@ strong{
   position: fixed;
   display: flex;
   background-color: var(--navbar);
-  height: 2vw;
+  height: 3.5vh;
   top: 0;
   left: 0;
   right: 0;
   justify-content: end;
+  line-height: 80%;
   gap: 50px;
   padding-right: 30px;
   padding-top: 20px;
@@ -77,4 +82,20 @@ strong{
   color: var(--important);
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.project-tile{
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+}
+
+.project-image{
+  width: inherit;
+}
+
+.project-description{
+  width: inherit;
+  height: inherit;
+  background-color: var(--background1);
 }
